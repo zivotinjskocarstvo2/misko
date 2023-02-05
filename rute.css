@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Raleway";
+  background-image: linear-gradient(
+    rgba(30, 144, 255, 0.75),
+    rgba(30, 144, 255, 0.25)
+  );
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  font-weight: 900;
+  font-size: 25px;
+  justify-content: space-between;
+  height: 100px;
+  background: rgba(131, 247, 131, 0.849);
+  align-items: center;
+  background-image: url("./images/background-4.jpg");
+}
+#socialLinks li {
+  display: inline;
+  margin-right: 50px;
+}
+
+div.container {
+  margin: 0 auto;
+  padding: 10em 3em;
+  text-align: center;
+}
+
+div.container a {
+  color: #fff;
+  text-decoration: none;
+  font: 20px;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+div.container a:hover {
+  color: rgb(255, 0, 0);
+}
+
+a:hover {
+  color: greenyellow;
+}
+
+div.borderXwidth a:before,
+div.borderXwidth a:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: "";
+  background: red;
+  transition: all 0.3s;
+}
+
+div.borderXwidth a:before {
+  left: 0px;
+  top: 0px;
+}
+
+div.borderXwidth a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+div.borderXwidth a:hover:before,
+div.borderXwidth a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
+main {
+  position: relative;
+  margin: 130px auto auto auto;
+  margin-bottom: 150px;
+}
+
+#rute {
+  display: flex;
+  /* width: 80vw; */
+  justify-content: space-evenly;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#napomena p {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.fa-brands.fa-square-facebook,
+.fa-brands.fa-instagram {
+  color: greenyellow;
+}
+.fa-brands.fa-square-facebook:hover,
+.fa-brands.fa-instagram:hover {
+  color: red;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  align-items: center;
+  text-align: center;
+  background: dodgerblue;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footerLinks li {
+  display: inline;
+}

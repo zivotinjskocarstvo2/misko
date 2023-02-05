@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Raleway";
+  background-image: linear-gradient(
+    rgba(30, 144, 255, 0.75),
+    rgba(30, 144, 255, 0.25)
+  );
+}
+
+nav {
+  display: flex;
+  font-weight: 900;
+  font-size: 25px;
+  justify-content: space-between;
+  height: 100px;
+  background-color: 	#282b30;
+  background: rgba(131, 247, 131, 0.849);
+  align-items: center;
+  background-image: url("./images/background-4.jpg");
+}
+#socialLinks li {
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+div.container {
+  margin: 0 auto;
+  padding: 10em 3em;
+  text-align: center;
+}
+
+div.container a {
+  color: #fff;
+  text-decoration: none;
+  font: 20px;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+div.container a:hover {
+  color: rgb(255, 0, 0);
+}
+
+a:hover {
+  color: greenyellow;
+}
+
+div.borderXwidth a:before,
+div.borderXwidth a:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: "";
+  background: red;
+  transition: all 0.3s;
+}
+
+div.borderXwidth a:before {
+  left: 0px;
+  top: 0px;
+}
+
+div.borderXwidth a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+div.borderXwidth a:hover:before,
+div.borderXwidth a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
+.burger {
+  display: none;
+}
+
+.stripe-1,
+.stripe-2,
+.stripe-3 {
+  width: 40px;
+  height: 7px;
+  background-color: orangered;
+}
+
+.narrow-menu {
+  display: none;
+}
+
+.narrow-menu img {
+  height: 20px;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.no-display {
+  display: none;
+}
+
+.narrow-menu-item i {
+  color: red;
+  height: 25px;
+  width: 45px;
+  text-align: center;
+  padding-top: 15px;
+  margin-right: 20px;
+}
+
+.narrow-menu-item a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+main {
+  display: inline-flex;
+  margin: 130px auto 150px 50px;
+}
+
+#slider {
+  position: relative;
+  width: 1056px;
+  height: 560px;
+
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 300%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+  float: left;
+}
+
+#slider ul li img {
+  width: 1056px;
+  height: 560px;
+}
+
+#text {
+  margin-left: 200px;
+  margin-right: 50px;
+  padding: 0px 40px;
+  height: max-content;
+  width: max-content;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  background-image: url("./images/background-3.jpg");
+  background-size: cover;
+}
+
+#text p {
+  margin-bottom: 30px;
+}
+
+.fa-brands.fa-square-facebook,
+.fa-brands.fa-instagram {
+  color: greenyellow;
+}
+.fa-brands.fa-square-facebook:hover,
+.fa-brands.fa-instagram:hover {
+  color: red;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  align-items: center;
+  text-align: center;
+  background: dodgerblue;
+}
+
+footer div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footerLinks li {
+  display: inline;
+}
+
+@media only screen and (max-width: 1700px) {
+  main {
+    display: block;
+    margin: 130px auto 150px auto;
+  }
+
+  #slider {
+    position: relative;
+    width: 1056px;
+    height: 560px;
+
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #slider {
+    width: 800px;
+    height: 450px;
+  }
+
+  #slider ul li img {
+    width: 800px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #slider {
+    width: 600px;
+    height: 330px;
+  }
+
+  #slider ul li img {
+    width: 600px;
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container.green.borderXwidth {
+    display: none;
+  }
+
+  #socialLinks {
+    margin-left: 70vw;
+  }
+
+  .burger {
+    width: 40px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .narrow-menu {
+    width: 100vw;
+    background: #ffbb3e;
+    display: block;
+    z-index: 100;
+  }
+
+  .no-display {
+    display: none;
+  }
+
+  .narrow-menu-item {
+    padding-left: 10px;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  #slider {
+    width: 95vw;
+    height: 52vw;
+  }
+
+  #slider ul li img {
+    width: 95vw;
+    height: 52vw;
+  }
+
+  #text {
+    width: 95vw;
+    height: 40vw;
+    padding: 0;
+    font-size: 20px;
+  }
+}
+
